@@ -16,7 +16,7 @@ export const siteMeta = {
     'Голос Души - бот для общения, поддержки и бережного разговора. Здесь каждый может быть услышан.',
   keywords:
     'Голос Души, GolosDushiSpaceBot, бот поддержки, общение, Telegram бот, онлайн поддержка, отзывы Голос Души',
-  url: 'https://nixiers.github.io/golosdyshii/',
+  url: 'https://golosdyshii.github.io/',
   image: '/og-image.png',
   themeColor: '#050505',
 };
