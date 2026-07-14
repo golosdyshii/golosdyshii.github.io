@@ -22,6 +22,7 @@ export type TeamGroup = {
 export const administration = [
   { role: 'Владелец', name: '#жучка' },
   { role: 'Совлад', name: '#агния' },
+  { role: 'Developer', name: 'nixiers' },
   { role: 'Мл.админ', name: '#' },
 ] as const;
 
