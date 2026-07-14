@@ -76,7 +76,7 @@ export const teamGroups: TeamGroup[] = [
         icon: HeartHandshake,
         members: [
           { name: '#Пустота', tone: 'soft' },
-          { name: '#', tone: 'dark' },
+          { name: '#искорка', tone: 'dark' },
           { name: '#', tone: 'dark' },
         ],
       },
