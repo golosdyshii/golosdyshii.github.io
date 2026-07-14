@@ -886,6 +886,18 @@ h2 {
   gap: 14px;
 }
 
+.made span {
+  display: grid;
+  gap: 4px;
+  justify-items: end;
+}
+
+.made small {
+  color: var(--text-muted);
+  font-size: 11px;
+  letter-spacing: 0;
+}
+
 #rules {
   scroll-margin-top: 130px;
 }
@@ -1121,6 +1133,10 @@ h2 {
 
   .made {
     justify-self: center;
+  }
+
+  .made span {
+    justify-items: center;
   }
 }
 

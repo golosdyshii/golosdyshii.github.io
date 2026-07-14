@@ -19,7 +19,10 @@ function Footer() {
           </a>
         </div>
         <p className="made">
-          Сделано с душой.
+          <span>
+            Сделано с душой.
+            <small>Developer: nixiers</small>
+          </span>
           <Heart size={20} />
         </p>
       </div>
