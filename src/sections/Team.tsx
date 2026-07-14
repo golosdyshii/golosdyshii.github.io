@@ -3,6 +3,9 @@ import { memo } from 'react';
 import DecorativeLine from '../components/ui/DecorativeLine';
 import { administration, type TeamGroup, teamGroups } from '../config/team';
 
+const juniorAdmin = administration.find((admin) => admin.role === 'Мл.админ');
+const seniorAdmins = administration.filter((admin) => admin.role !== 'Мл.админ');
+
 type TeamPanelProps = {
   group: TeamGroup;
 };
@@ -44,7 +47,7 @@ function Team() {
       <DecorativeLine />
 
       <div className="admin-cards">
-        {administration.slice(0, 3).map((admin) => (
+        {seniorAdmins.map((admin) => (
           <article className="admin-card" key={admin.role}>
             <Crown size={42} strokeWidth={1.1} aria-hidden="true" />
             <div>
@@ -55,12 +58,14 @@ function Team() {
         ))}
       </div>
 
-      <article className="admin-card junior-card">
-        <div>
-          <span>{administration[3].role}</span>
-          <strong>{administration[3].name}</strong>
-        </div>
-      </article>
+      {juniorAdmin ? (
+        <article className="admin-card junior-card">
+          <div>
+            <span>{juniorAdmin.role}</span>
+            <strong>{juniorAdmin.name}</strong>
+          </div>
+        </article>
+      ) : null}
 
       <div className="team-grid">
         {teamGroups.map((group) => (

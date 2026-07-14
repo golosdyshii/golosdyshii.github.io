@@ -22,7 +22,6 @@ export type TeamGroup = {
 export const administration = [
   { role: 'Владелец', name: '#жучка' },
   { role: 'Совлад', name: '#агния' },
-  { role: 'Ст.админ', name: '#авторитет' },
   { role: 'Мл.админ', name: '#' },
 ] as const;
 
@@ -77,7 +76,7 @@ export const teamGroups: TeamGroup[] = [
         icon: HeartHandshake,
         members: [
           { name: '#Пустота', tone: 'soft' },
-          { name: '#искорка', tone: 'dark' },
+          { name: '#', tone: 'dark' },
           { name: '#', tone: 'dark' },
         ],
       },
